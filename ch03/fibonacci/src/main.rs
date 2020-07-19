@@ -1,14 +1,14 @@
 use std::io::{stdin, stdout, Write};
 
-fn fibonacci(i: u64) -> Result<u128,(u64,u128)> {
+fn fibonacci(i: u64) -> Result<u128, (u64, u128)> {
     let mut a: u128 = 0;
     let mut b: u128 = 1;
     let mut tmp: u128;
-    for r in 2..i+1 {
+    for r in 2..i + 1 {
         tmp = b;
         b = match a.checked_add(b) {
             Some(n) => n,
-            None => return Err((r,b))
+            None => return Err((r, b)),
         };
         a = tmp;
     }
@@ -34,7 +34,7 @@ fn main() {
         let inp = match input(String::from("> ")) {
             Ok(v) => v,
             Err(r) => {
-                eprintln!("{}",r);
+                eprintln!("{}", r);
                 continue;
             }
         };
@@ -52,11 +52,14 @@ fn main() {
         };
         match fibonacci(i) {
             Ok(n) => {
-                println!("Result : {}",n);
-            },
+                println!("Result : {}", n);
+            }
             Err((maxindex, maxval)) => {
-                eprintln!("Overflow error."); 
-                eprintln!("Max: {}, which is the {}th fibonacci number.", maxval, maxindex);
+                eprintln!("Overflow error.");
+                eprintln!(
+                    "Max: {}, which is the {}th fibonacci number.",
+                    maxval, maxindex
+                );
             }
         };
     }

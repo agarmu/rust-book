@@ -1,7 +1,7 @@
 fn main() {
     let mut v: Vec<i32> = Vec::new();
     //i32 - default integer type
-    let r = vec![1,2,3];
+    let r = vec![1, 2, 3];
     let q = &r[0];
     // push elements
     v.push(5);
@@ -14,5 +14,5 @@ fn main() {
 
     //Pop vals
     println!("{:?}", v.pop());
-    println!("{:?}",v);
+    println!("{:?}", v);
 }

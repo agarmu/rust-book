@@ -1,5 +1,6 @@
 fn main() {
-    let hello = vec![String::from("السلام عليكم"),
+    let hello = vec![
+        String::from("السلام عليكم"),
         String::from("Dobrý den"),
         String::from("Hello"),
         String::from("שָׁלוֹם"),
@@ -9,7 +10,7 @@ fn main() {
         String::from("你好"),
         String::from("Olá"),
         String::from("Здравствуйте"),
-        String::from("Hola")
+        String::from("Hola"),
     ];
     println!("{:#?}", hello)
 }

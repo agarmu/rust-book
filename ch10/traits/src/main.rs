@@ -15,11 +15,7 @@ struct NewsArticle {
 
 impl Summary for NewsArticle {
     fn summarize(&self) -> String {
-        format!("{}, by {} ({})", 
-            self.headline,
-            self.author,
-            self.location
-        )
+        format!("{}, by {} ({})", self.headline, self.author, self.location)
     }
     fn summarize_author(&self) -> String {
         (*self.author).to_string()
@@ -30,12 +26,12 @@ struct Tweet {
     username: String,
     _content: String,
     _reply: bool,
-    _retweet: bool
+    _retweet: bool,
 }
 
 impl Summary for Tweet {
-    fn summarize_author(&self)->String{
-        format!("@{}",self.username)
+    fn summarize_author(&self) -> String {
+        format!("@{}", self.username)
     }
     //No need to implement summarize(), since it has a default.
 }
@@ -49,17 +45,16 @@ fn largest<T: std::cmp::PartialOrd + Copy>(list: &[T]) -> T {
         }
     }
     largest
-    
-    
 }
 //impl syntax
 fn notify(item: &impl Summary) {
     println!("Breaking news! {}", item.summarize());
 }
 //where syntax
-fn _some_func<T,U>(_t:&T,_u:&U)->i32
-    where   T: Summary + Clone,
-            U: Clone + std::fmt::Debug
+fn _some_func<T, U>(_t: &T, _u: &U) -> i32
+where
+    T: Summary + Clone,
+    U: Clone + std::fmt::Debug,
 {
     0
 }
@@ -98,16 +93,16 @@ use std::fmt::Display;
 #[derive(Debug)]
 struct Pair<T> {
     x: T,
-    y: T
+    y: T,
 }
 
 impl<T: std::fmt::Debug> Pair<T> {
     fn new(x: T, y: T) -> Self {
-        Self{x,y}
+        Self { x, y }
     }
 }
 
-impl <T: Display + PartialOrd> Pair<T>{
+impl<T: Display + PartialOrd> Pair<T> {
     fn cmp_display(&self) {
         if self.x >= self.y {
             println!("The largest member is x = {}", self.x);
@@ -116,8 +111,6 @@ impl <T: Display + PartialOrd> Pair<T>{
         }
     }
 }
-
-
 
 fn main() {
     let article = NewsArticle {
@@ -132,35 +125,31 @@ fn main() {
     notify(&article);
     let tweet = Tweet {
         username: String::from("horse_ebooks"),
-        _content: String::from(
-            "of course, as you probably already know, people",
-        ),
+        _content: String::from("of course, as you probably already know, people"),
         _reply: false,
         _retweet: false,
     };
     let tweetb = Tweet {
         username: String::from("horse_ebooks"),
-        _content: String::from(
-            "are very very stupid.",
-        ),
+        _content: String::from("are very very stupid."),
         _reply: false,
         _retweet: false,
     };
     notify(&tweet);
-    
+
     let number_list = vec![34, 50, 25, 100, 65];
 
     println!("Largest num: {}", largest(&number_list));
 
-    let char_list = vec!['y', 'm', 'a','q','f','t','p'];
+    let char_list = vec!['y', 'm', 'a', 'q', 'f', 't', 'p'];
 
     println!("Largest char: {}", largest(&char_list));
-    
+
     let pair_a = Pair::new(5, 6);
     let pair_b = Pair::new(tweet, tweetb);
     println!("pair_a:{:?}", &pair_a);
     println!("pair_b:{:?}", &pair_b);
-    
+
     //Works
     pair_a.cmp_display();
 

@@ -16,4 +16,5 @@ members = [
     "ch10/lifetimes",
     "ch10/traits",
     "ch11/unit_tests",
+    "ch12/minigrep"
 ]

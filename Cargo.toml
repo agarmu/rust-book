@@ -1,0 +1,19 @@
+[workspace]
+
+members = [
+    "ch01/hello-world",
+    "ch02/guessing-game",
+    "ch03/fibonacci",
+    "ch03/tempconv",
+    "ch03/twelvedays",
+    "ch05/rectangles",
+    "ch07/packages_crates_modules",
+    "ch08/hashmap",
+    "ch08/mean_median_mode",
+    "ch08/strings",
+    "ch08/vector",
+    "ch10/generics",
+    "ch10/lifetimes",
+    "ch10/traits",
+    "ch11/unit_tests",
+]

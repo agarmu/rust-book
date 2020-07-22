@@ -1,5 +1,4 @@
 use super::*;
-use test::Bencher;
 #[test]
 fn case_sensitive() {
     let query = "duct";

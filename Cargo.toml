@@ -19,5 +19,6 @@ members = [
     "ch12/minigrep",
     "ch13/closures",
     "ch13/iterators",
-    "ch13/minigrep2"
+    "ch13/minigrep2",
+    "ch14/cargo_feat"
 ]

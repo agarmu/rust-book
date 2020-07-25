@@ -20,5 +20,11 @@ members = [
     "ch13/closures",
     "ch13/iterators",
     "ch13/minigrep2",
-    "ch14/cargo_feat"
+    "ch14/publishing",
+    "ch15/boxes",
+    "ch15/deref",
+    "ch15/cleanup",
+    "ch15/rc",
+    "ch15/refcell",
+    "ch15/tree"
 ]

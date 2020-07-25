@@ -24,7 +24,11 @@ version = "1.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
-name = "cargo_feat"
+name = "boxes"
+version = "0.1.0"
+
+[[package]]
+name = "cleanup"
 version = "0.1.0"
 
 [[package]]
@@ -48,6 +52,10 @@ dependencies = [
  "lazy_static 1.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "winapi 0.3.9 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
+
+[[package]]
+name = "deref"
+version = "0.1.0"
 
 [[package]]
 name = "fibonacci"
@@ -125,6 +133,10 @@ name = "packages_crates_modules"
 version = "0.1.0"
 
 [[package]]
+name = "publishing"
+version = "0.1.0"
+
+[[package]]
 name = "rand"
 version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -150,7 +162,15 @@ version = "0.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
+name = "rc"
+version = "0.1.0"
+
+[[package]]
 name = "rectangles"
+version = "0.1.0"
+
+[[package]]
+name = "refcell"
 version = "0.1.0"
 
 [[package]]
@@ -191,6 +211,10 @@ dependencies = [
 
 [[package]]
 name = "traits"
+version = "0.1.0"
+
+[[package]]
+name = "tree"
 version = "0.1.0"
 
 [[package]]

@@ -1,0 +1,8 @@
+[package]
+name = "publishing"
+license = "MIT OR Apache-2.0"
+version = "0.1.0"
+authors = ["Mukul <55563106+agarmu@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]

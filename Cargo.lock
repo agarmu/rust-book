@@ -19,6 +19,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "basic_threads"
+version = "0.1.0"
+
+[[package]]
 name = "bitflags"
 version = "1.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -126,6 +130,10 @@ version = "0.1.0"
 
 [[package]]
 name = "minigrep2"
+version = "0.1.0"
+
+[[package]]
+name = "mutex"
 version = "0.1.0"
 
 [[package]]

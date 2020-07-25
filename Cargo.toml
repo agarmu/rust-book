@@ -26,5 +26,7 @@ members = [
     "ch15/cleanup",
     "ch15/rc",
     "ch15/refcell",
-    "ch15/tree"
+    "ch15/tree",
+    "ch16/basic_threads",
+    "ch16/mutex"
 ]

@@ -7,7 +7,7 @@ fn main() {
         let counter = Arc::clone(&counter);
         let handle = thread::spawn(move || {
             let mut num = counter.lock().unwrap();
-            *num +=1;
+            *num += 1;
         });
         handles.push(handle);
     }

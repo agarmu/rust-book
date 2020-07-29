@@ -137,11 +137,19 @@ name = "mutex"
 version = "0.1.0"
 
 [[package]]
+name = "nqueens"
+version = "0.1.0"
+
+[[package]]
 name = "oop"
 version = "0.1.0"
 
 [[package]]
 name = "packages_crates_modules"
+version = "0.1.0"
+
+[[package]]
+name = "patterns"
 version = "0.1.0"
 
 [[package]]

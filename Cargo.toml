@@ -30,5 +30,7 @@ members = [
     "ch16/basic_threads",
     "ch16/mutex",
     "ch17/trait_objects",
-    "ch17/oop"
+    "ch17/oop",
+    "ch18/patterns",
+    "exercises/nqueens"
 ]

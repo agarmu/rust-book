@@ -3,7 +3,7 @@ fn main() {
     println!("{:#?}", getvals(&mut vec![1, 2, 3, 3, 2]));
 }
 
-fn getvals(vals: &mut Vec<i32>) -> (f32, f32, Vec<i32>) {
+fn get_vals(vals: &mut Vec<i32>) -> (f32, f32, Vec<i32>) {
     vals.sort_by(|a, b| a.partial_cmp(b).unwrap());
     let size = vals.len();
     // Get Mean
